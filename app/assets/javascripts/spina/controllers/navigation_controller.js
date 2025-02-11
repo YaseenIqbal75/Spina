@@ -6,6 +6,7 @@ export default class extends Controller {
   }
   
   connect() {
+    this.closeAllNavigations()
     if (window.innerWidth < 768) {
       this.closeAllNavigations()
     }
