@@ -23,7 +23,7 @@ Spina::Engine.routes.draw do
 
   # Backend
   namespace :admin, path: Spina.config.backend_path do
-    root 'dashboards#index'
+    root 'pages#index'
 
     resource :account
     resource :theme, controller: :theme
